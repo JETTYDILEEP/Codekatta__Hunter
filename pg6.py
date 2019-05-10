@@ -1,13 +1,13 @@
-n=int(input())
-l=[int(x) for x in input().split()]
-l1=[]
-test=0
-for i in l:
-    if i not in l:
-        l.append(i)
+m=int(input())
+a=list(map(int,input().split()))
+b=[]
+c=0
+for i in a:
+    if i not in b:
+        b.append(i)
     else:
         print(i)
-        test+=1
+        c+=1
         break
-if test==0:
+if c==0:
     print("unique")
