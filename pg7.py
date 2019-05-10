@@ -5,9 +5,17 @@ for i in range(0,v):
         k=' '
     else:
         k=''
-    if i%2==0:
+    if(i!=v-1):
+        if i%2==0:
+            if a[i]%2!=0:
+                print(a[i],end=k)
+        elif i%2!=0:
+            if a[i]%2==0:
+                print(a[i],end=k)
+    else:
+        if i%2==0:
         if a[i]%2!=0:
-            print(a[i],end=k)
+            print(a[i],end='')
     elif i%2!=0:
         if a[i]%2==0:
-            print(a[i],end=k)
+            print(a[i],end='')
