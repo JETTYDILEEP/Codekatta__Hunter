@@ -1,4 +1,4 @@
 n=int(input())
-l=[int(x) for x in input().split()]
-l.reverse()
-print(*l,sep='->')
+m=[int(x) for x in input().split()]
+m.reverse()
+print(*m,sep='->')
