@@ -10,11 +10,11 @@ strings=[]
 for i in s:
   strings.append(''.join(i))
 
-m=max(strings)
+x=max(strings)
 for i in strings:
   if i<m and i>n:
-    m=i
-if m==n:
+    x=i
+if x==n:
   print('impossible')
 else:
-  print(m)
+  print(x)
